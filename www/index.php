@@ -1,4 +1,5 @@
 <?php require('./processing/session.php') ?>
+<script type="text/javascript" language="JavaScript" src="./onload.js"></script>
 <!DOCTYPE html>
 <html>
 <head>

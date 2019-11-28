@@ -1,11 +1,4 @@
 <?php require('./processing/session.php') ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<title>Intranet Kraken</title>
-</head>
-<body>
     <div class="menu_bar">
         <a id="logo" class="menu_button">KRAKEN 2020</a>
         <a href="./" class="menu_button">Acceuil</a>
@@ -30,11 +23,10 @@
         </div>
         <?php } ?>
         <div >
-            <a id="menu_account" class="menu_button">azertyu.azertyu@telecom-sudparis.eu</a>
+            <a id="menu_account" class="menu_button"><?php session_start(); echo $_SESSION['login']; ?></a>
             <div class="menu_content">
                 <a id="menu_account" href="./account.php" class="menu_button">Mon compte</a>
                 <a id="menu_account" href="./processing/logout.php" class="menu_button">Se Déconnecter</a>
             </div>
         </div>
     </div>
-</body>
