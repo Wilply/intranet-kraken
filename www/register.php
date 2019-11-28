@@ -5,6 +5,7 @@ session_start();
     } 
 ?>
 <!DOCTYPE html>
+<script type="text/javascript" language="JavaScript" src="./onload.js"></script>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
