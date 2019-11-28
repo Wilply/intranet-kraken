@@ -1,0 +1,29 @@
+<table>
+    <tr>
+        <th>id</th>
+        <th>nom</th>
+        <th>prenom</th>
+        <th>pole</th>
+        <th>login</th>
+        <th>password</th>
+        <th>is_valid</th>
+        <th>is_admin</th>
+    </tr>
+<?php
+    /*require('connection.php');
+    $ans = $bdd->query("SELECT * FROM users");
+    while ($data = $ans->fetch()) {
+        echo("<tr>"
+                ."<td>".$data['user_id']."</td>"
+                ."<td>".$data['user_nom']."</td>"
+                ."<td>".$data['user_prenom']."</td>"
+                ."<td>".$data['user_pole']."</td>"
+                ."<td>".$data['user_login']."</td>"
+                ."<td>".$data['user_password']."</td>"
+                ."<td>".$data['user_is_valid']."</td>"
+                ."<td>".$data['user_is_admin']."</td>"
+            ."</tr>");
+    }
+    $ans->closeCursor();*/
+?>
+</table><br><br><br>

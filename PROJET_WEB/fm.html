@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>KRAKEN</title>
+</head>
+<body>
+
+
+    <script>
+        
+        $("input#test-form").click(function(){
+            $.post("https://script.google.com/macros/s/AKfycbx6wnHJzvTfU3g4DTwCUV9IIMM4aZ87xw2-jTFx9ordLDmcAQI/exec",
+                {
+                    date: "test",
+                },
+
+        });
+</script>
+
+
+<ul>
+    <li><a href="menu.html">Home</a></li>
+    <li><a href="infos.html">Infos générales</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Calendrier</a>
+        <div class="dropdown-content">
+            <a href="bf.html">Bouffe listeux</a>
+            <a href="bl.html">Bourre listeux</a>
+            <a href="fm.html">Fume listeux</a>
+        </div>
+    </li>
+</ul>
+
+<h1 align="center">Espace organisation fume listeux</h1>
+
+
+        <iframe height="300%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOGhdREWSp-z2RCFbQ_RzG9qYLpXw0HsI6ovC74t3x0P7i5MzEQXqtAokhs7pmveO5yolZ0yImmkKr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+                width="100%"></iframe>
+<hr> <br>
+
+ <form id="test-form" method="POST" action="https://script.google.com/macros/s/AKfycbx6wnHJzvTfU3g4DTwCUV9IIMM4aZ87xw2-jTFx9ordLDmcAQI/exec">
+
+
+
+
+     <h1 align="center">Ajouter un fume listeux</h1>
+     <br>
+     <input type="date" placeholder="Entrez la date" id="date">
+     <input type="text" placeholder="Entrez les gens qui y vont" id="personnes">
+     <input type="text" placeholder="Personne a contacter en cas de besoin" id="contact">
+     <input type="text" placeholder="Lieu" id="lieu">
+     <input type="text" placeholder="autres renseignements" id="demande">
+     <input type="submit" id="submit-form">
+     <input type="reset">
+ </form>
+
+</body>
+<hr>
+<footer>
+    Liste KRAKEN espace réservé
+<br><br>
+    https://script.google.com/macros/s/AKfycbx6wnHJzvTfU3g4DTwCUV9IIMM4aZ87xw2-jTFx9ordLDmcAQI/exec
+</footer>
+</html>

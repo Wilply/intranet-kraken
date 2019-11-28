@@ -1,0 +1,310 @@
+body {
+    position: absolute;
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    min-height: 1000px;
+    background-color: #2f726a;
+    margin: 0;
+}
+
+.main {
+    position: relative;
+    background-color: whitesmoke;
+    width: 90%;
+    height: 90%;
+    margin: 20px auto 50px auto;
+    box-shadow: 3px 3px 5px darkgray;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+/* LOGIN & REGISTER */
+.register {
+    background-color: #722f37;
+    box-shadow: 5px 5px 20px lightgrey;
+    border-radius: 5px;
+    width: 400px;
+    height: 550px;
+
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+}
+
+.register_form {
+    margin: 40px;
+    line-height: 130%;
+    color: white;
+}
+
+.register_form a {
+    color: whitesmoke;
+}
+
+.register_foot {
+    /*width: 83%;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    background-color: #722f37;
+    box-shadow: 5px 5px 20px lightgrey;
+    border-radius: 5px;
+    width: 350px;
+    height: 300px;
+
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+}
+
+.info {
+    width: 600px;
+    height: 300px;
+
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+.erreur {
+    width: 600px;
+    height: 300px;
+
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+
+    color: #722f37;
+    text-align: center;
+    font-size: larger;
+}
+/*  FIN LOGIN & REGISTER */
+
+/* MENU */
+.menu_bar {
+    background-color: #333;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.menu_button {
+    display: flex;
+    height: 45px;
+    width: 150px;
+    min-width: 150px;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+    background-color: #333;
+    text-decoration: none;
+
+    border-right-style: solid;
+}
+
+.menu_button:hover {
+    background-color: #722f37;
+}
+
+.menu_button:hover + .menu_content, .menu_content:hover {
+    display: flex;
+}
+
+.menu_content .menu_button {
+    border-top-style: solid;
+}
+
+.menu_content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu_middle {
+    margin-left: auto;
+    height: 45px;
+    width: 150px;
+    min-width: 50px;
+}
+
+#logo {
+    background-color: #722f37;
+}
+
+#menu_admin {
+    width: 150px;
+    border-right-style: none;
+    border-left-style: solid;
+    color: whitesmoke;
+}
+
+#menu_account {
+    width: 300px;
+    border-right-style: none;
+    border-left-style: solid;
+    color: whitesmoke;
+}
+
+#menu_end_div {
+    margin-left: auto;
+}
+/* FIN MENU */
+
+/* BL/BL/FL */
+.bl {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+.bl iframe {
+    width: 100%;
+    height: 60%;
+}
+
+.ajout_bl {
+    min-height: 150px;
+    width: 100%;
+}
+
+.ajout_bl table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ajout_bl td, th {
+    border-left-style: solid;
+    border-left-width: 1px;
+    text-align: left;
+    position: relative;
+}
+
+.ajout_bl input {
+    top: 2px;
+    margin: 0;
+    position: absolute;
+}
+
+.ajout_bl th:nth-child(1) {
+    width: 10%;
+}
+
+.ajout_bl th:nth-child(2), th:nth-child(3), th:nth-child(4) {
+    width: 20%;
+}
+
+.ajout_bl th:nth-child(6) {
+    width: 50px;
+}
+
+#send {
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* FIN BL/BL/FL */
+
+/* USERS */
+.user_table {
+    table-layout: fixed;
+    border-style: solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.user_table_head, .user_table_head th {
+    border-style: solid;
+}
+
+.user_table_head th:nth-child(5),  .user_table_head th:nth-child(6) {
+    width: 80px;
+}
+
+.user_table_head th:nth-child(4) {
+    width: 350px;
+}
+
+.user_table_body, .user_table_body td {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.user_table_body td {
+    padding: 5px 10px;
+}
+/* USERS */
+
+/* ACCOUNT */
+.account_info {
+    border-style: solid;
+    padding: 30px;
+    width: 350px;
+}
+
+.account_info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.account_info tr {
+    height: 1.6em;
+}
+
+.account_info td:nth-child(1) {
+    width: 40%;
+}
+
+.account_info td {
+    border-spacing: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.change_pass {
+    border-style: solid;
+    padding: 30px;
+    width: 350px;
+}
+
+.change_pass form {
+    line-height: 1.6em;
+}
+/* FIN ACCOUNT */
+
+#input_30 {
+    width: 30%;
+}
+
+#input_40 {
+    width: 40%;
+}
+
+#input_50 {
+    width: 50%;
+}
+
+#input_80 {
+    width: 80%;
+}
+
+#input_97 {
+    width: 97%;
+}
+
+#input_90 {
+    width: 90%;
+}
